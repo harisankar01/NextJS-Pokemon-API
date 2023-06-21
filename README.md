@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokemon Selection App
+
+> An app to demonstrate the new features of nextJS
+
+This is a web application that displays a list of Pokemon fetched from the Pokemon API. Users can select their favorite Pokemon from the list and store their selection in Firebase.
+
+## Features
+
+- Fetches data from the Pokemon API to display a list of Pokemon.
+- Allows users to select their favorite Pokemon from the list.
+- Stores the user's Pokemon selection in Firebase.
+- Implements authentication using Firebase email and password.
+- Uses JSON Web Tokens (JWT) for token-based authentication.
+- Secures the `/info` route by verifying the JWT token.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- Next.js: A React framework for server-side rendering and static site generation.
+- Firebase: A cloud-based platform for building web and mobile applications.
+- Material-UI: A popular UI component library for React.
+- JSON Web Tokens (JWT): A standard for token-based authentication.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/pokemon-selection-app.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   cd pokemon-selection-app
+   npm install
+   ```
+
+3. Set up Firebase:
+
+   - Create a Firebase project in the Firebase Console.
+   - Enable the Authentication and Firestore services.
+   - Set up your Firebase configuration in `firebaseConfig` in the `services/db.ts` file.
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:3000` to view the application.
+
+## Usage
+
+1. Sign up with your email and password to create an account.
+2. Log in with your credentials to access the Pokemon selection page.
+3. On the Pokemon selection page, you will see a list of Pokemon.
+4. Click on the "Save" button next to a Pokemon to select it as your favorite.
+5. Your selected Pokemon will be stored in Firebase.
+
+## Folder Structure
+
+```
+.
+├── components           # React components
+├── src/app              # Next.js pages
+├── services             # Firebase service
+├── utils                # Typescript interfaces
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Acknowledgements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Pokemon API](https://pokeapi.co/): The RESTful API used to fetch Pokemon data.
+- [Next.js Documentation](https://nextjs.org/docs): Official documentation for Next.js.
+- [Firebase Documentation](https://firebase.google.com/docs): Official documentation for Firebase.
+- [Material-UI Documentation](https://mui.com/): Official documentation for Material-UI.
