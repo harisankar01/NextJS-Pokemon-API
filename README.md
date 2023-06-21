@@ -1,8 +1,10 @@
-# Pokemon Selection App
+# [Pokemon Selection App](https://next-js-pokemon-api-mu.vercel.app/)
 
 > An app to demonstrate the new features of nextJS
 
 This is a web application that displays a list of Pokemon fetched from the Pokemon API. Users can select their favorite Pokemon from the list and store their selection in Firebase.
+
+Visit the website in [poke-app](https://next-js-pokemon-api-mu.vercel.app/)
 
 ## Features
 
@@ -65,7 +67,7 @@ To run the project locally, follow these steps:
 ```
 .
 ├── components           # React components
-├── src/app              # Next.js pages
+├── app                  # Next.js pages
 ├── services             # Firebase service
 ├── utils                # Typescript interfaces
 └── ...
